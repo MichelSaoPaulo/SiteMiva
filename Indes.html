@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Michel - Mestre de Cerimônia</title>
+
+    <!-- Fonte Chalala do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chalala&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("fundo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #222;
+        }
+
+        header {
+            font-family: 'Chalala', cursive;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .content {
+            display: flex;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .main-photo {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-photo img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .side-photos {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            min-width: 300px;
+            padding-left: 30px;
+        }
+
+        .side-photos img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+
+        .description {
+            padding: 20px 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 5px;
+        }
+
+        .footer-item img {
+            height: 24px;
+        }
+
+        .center {
+            justify-content: center;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para controles da música */
+        .music-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .music-controls input[type="range"] {
+            width: 100px;
+        }
+
+        .music-controls button {
+            margin-top: 10px;
+            padding: 6px 12px;
+            border: none;
+            background-color: #25D366;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .music-controls button:hover {
+            background-color: #1ebe5d;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. Cabeçalho -->
+<header>
+    <img src="logo.png" alt="Logo" style="height: 50px; margin-right: 5cm;">
+    Michel Mestre de Cerimônia e Assessor
+</header>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    header {
+        font-family: 'Playfair Display', serif;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+
+  <!-- 2. Fotos -->
+<div class="content" style="
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+    align-items: stretch;
+">
+    <div class="main-photo" style="display: flex; align-items: center; justify-content: center;">
+        <img src="fotosprincipal.jpg" alt="Michel" style="width: 100%; max-width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+    </div>
+    <div class="side-photos" style="
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    ">
+        <img src="foto1.jpg" alt="Evento 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <img src="foto2.jpg" alt="Evento 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <img src="foto3.jpg" alt="Evento 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+        <img src="foto4.jpg" alt="Evento 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+    </div>
+</div>
+
+
+<!-- 3. Descrição -->
+<div class="description">
+    <h2 style="text-align: center;">
+        A Miva Assessoria, sob a condução do Mestre de Cerimônia Michel, é especialista em transformar eventos em momentos únicos, emocionantes e inesquecíveis.
+    </h2>
+
+    <h3 style="text-align: justify;"><strong>O que a Miva oferece?</strong></h3>
+
+    <p style="text-align: justify;">
+        Na Miva Assessoria, cada evento é conduzido com maestria para se tornar uma experiência memorável. Sob a liderança do Mestre de Cerimônia Michel, entregamos muito mais do que organização — proporcionamos emoção, elegância e fluidez em cada momento, com carisma e sofisticação.
+    </p>
+
+    <p style="text-align: justify;">
+        Oferecemos soluções completas de assessoria, com atendimento personalizado que se adapta ao perfil de cada cliente: desde a assessoria total, passando pela assessoria do dia, até o suporte exclusivo à noiva, com atenção dedicada aos mínimos detalhes.
+    </p>
+
+    <p style="text-align: justify;">
+        Com profissionalismo, sensibilidade e excelência, transformamos sonhos em realidade. A Miva é sinônimo de eventos inesquecíveis — entre em contato e descubra como tornar o seu evento um verdadeiro sucesso!
+    </p>
+</div>
+
+<!-- 4. Depoimentos em fotos -->
+<div class="testimonials" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px; padding: 20px; background-color: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+
+    <div style="grid-column: 1 / -1; text-align: ; margin-bottom: 10px;">
+        <h2 style="margin: 0;"><strong>Depoimentos</strong></h2>
+    </div>
+
+    <img src="depoimento1.jpg" alt="Depoimento 1" style="width: 100%; border-radius: 10px;">
+    <img src="depoimento2.jpg" alt="Depoimento 2" style="width: 100%; border-radius: 10px;">
+    <img src="depoimento3.jpg" alt="Depoimento 3" style="width: 100%; border-radius: 10px;">
+    <img src="depoimento4.jpg" alt="Depoimento 4" style="width: 100%; border-radius: 10px;">
+    <img src="depoimento5.jpg" alt="Depoimento 4" style="width: 100%; border-radius: 10px;">
+
+</div>
+
+
+
+
+
+
+    <!-- 4. Rodapé -->
+    <footer>
+        <div class="footer-item">
+            <a href="https://wa.me/5511977834685" target="_blank">
+                <img src="whatsapp.jpg" alt="WhatsApp">
+                <span>Orçamento</span>
+            </a>
+        </div>
+
+        <div class="footer-item center">
+            <a href="https://www.instagram.com/mivaassessoriasp" target="_blank">
+                <img src="instagram.jpg" alt="Instagram">
+                <span>Acesse nosso Instagram</span>
+            </a>
+        </div>
+
+        <div class="footer-item right">
+            <span>Atendemos Grande São Paulo</span>
+        </div>
+    </footer>
+
+    <!-- 5. Música de fundo -->
+    <audio id="musica" autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <div class="music-controls">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" onchange="setVolume(this.value)">
+        <br>
+        <button onclick="toggleMusica()">Tocar / Pausar</button>
+        <br><br>
+        <a href="musica.mp3" download="musica.mp3">Baixar Música</a>
+    </div>
+
+    <script>
+        const musica = document.getElementById("musica");
+        musica.volume = 0.5; // volume médio
+
+        function toggleMusica() {
+            if (musica.paused) {
+                musica.play();
+            } else {
+                musica.pause();
+            }
+        }
+
+        function setVolume(val) {
+            musica.volume = val;
+        }
+    </script>
+
+</body>
+</html>
+
